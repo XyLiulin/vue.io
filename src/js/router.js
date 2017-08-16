@@ -9,8 +9,8 @@ import CnewsList from '../component/news/list.vue';
 import CnewsDetails from '../component/news/details.vue';
 import CphotoList from '../component/photo/list.vue';
 import CphotoDetails from '../component/photo/details.vue';
-import CsubcommList from '../component/subcomm/list.vue';
-import CsubcommSlider from '../component/subcomm/slider.vue'
+import CgoodsList from '../component/goods/list.vue';
+import CgoodsDetails from '../component/goods/details.vue';
 
 // 导出一个路由实例
 export default new VueRouter({
@@ -25,7 +25,7 @@ export default new VueRouter({
         { path: '/photo/list/:id',component: CphotoList},
         { path: '/photo/details/:id',component:CphotoDetails},
         //商品购买
-        { path: '/subcomm/list/',component:CsubcommList},
-        { path: '/subcomm/slider/',component:CsubcommSlider}
+        { path: '/goods/list/',component:CgoodsList},
+        { path: '/goods/details/:id',component:CgoodsDetails}
     ]
 });
